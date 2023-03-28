@@ -1,0 +1,201 @@
+:root{
+    --primary-color: #e50914;
+    --dark-color: #141414b3;
+    --top-margin-percent: 42%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #999;
+}
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4{
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+img{
+    width: 100%;
+}
+input[type="email"]{
+    background: #999;
+
+}
+
+.showcase{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/44355e66-dbf8-4dd8-ba6b-8e9e32ec6abd/IN-en-20230320-popsignuptwoweeks-perspective_alpha_website_small.jpg") no-repeat center center/cover;
+}
+
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; */
+    z-index: 1;
+}
+
+.showcase-top{
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img{
+    width: 150px;    
+    position: absolute;
+    top: 22%;
+    left: 12%;
+}
+
+.showcase-top .btn-dark{
+    position: absolute;
+    top: var(--top-margin-percent);
+    right: 15%;
+    transform: translate(-50%,-50%);
+    margin: 5px;
+}
+.showcase-top a{
+    position: absolute;
+    top: var(--top-margin-percent);
+    right: 10%;
+    transform: translate(-20%,-35%);
+}
+
+.showcase-content{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+    z-index: 2;
+}
+
+.showcase-content h1{
+    font-weight: 800;
+    font-size: 2.79rem;
+    line-height: 1.5;
+    margin: 0 0 2rem;
+}
+
+.showcase-content p:first-of-type{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin: 0 0 2rem;
+}
+
+.showcase-content p{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin: 0 0 1.5rem;
+}
+.showcase-content #email-query{
+    display: inline !important;
+}
+
+/* Tab content */
+.tab-content-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 7px #3a3636 solid ;
+    justify-content: center;
+    align-items: center;
+    gap: 1em
+}
+
+.tab-content-item img{
+    width: 511px;
+    height: 383.3px;
+}
+
+#tab-1-content img{
+    z-index: 1
+}
+
+#tab-1-content video{
+    position: absolute;
+    left: 55.5%;
+    width: 400px;
+    height: 379.3px;
+}
+
+#tab-3-content img{
+    z-index: 1
+}
+
+#tab-3-content video{
+    position: relative;
+    left: 117%;
+    top: -125%;
+    width: 310px;
+    height: 379.3px;
+}
+
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+}
+
+btn:hover{
+    opacity: 0.9;
+}
+
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn-xl{
+    font-size: 1.5rem;
+    padding: 1rem 2.3rem;
+}
+
+.btn-dark{
+    background: var(--dark-color) !important;
+    border: 1px solid #999 !important;
+}
+
+.btn-left{
+    text-align: left;
+    padding: 1rem 2.5rem !important;
+}
